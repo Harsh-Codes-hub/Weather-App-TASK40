@@ -19,9 +19,88 @@
     />
   </head>
 
-  <body>
-    <main>
+  <body class="default-theme">
+    <!-- Background Glow -->
+    <div class="background-glow"></div>
 
+    <!-- Main App -->
+    <main class="app">
+      <!-- App Header -->
+      <header class="app-header">
+        <h1 class="app-title">Weatherly</h1>
+        <p class="app-subtitle">Real-time atmospheric weather experience</p>
+      </header>
+
+      <!-- Search Section -->
+      <section class="search">
+        <form class="search">
+          <div class="search-input-wrapper">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Enter city name..."
+              autocomplete="off"
+            />
+            <button type="submit" class="search-button">Search</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Weather Card -->
+      <section class="weather-card">
+        <!-- Top Info -->
+        <div class="weather-card-top">
+          <div class="weather-card-location-group">
+            <p class="weather-card-location">Jaipur, IN</p>
+
+            <p class="weather-card-date">sunday, 17 May</p>
+          </div>
+        </div>
+
+        <!-- Main Weather -->
+        <div class="weather-card-main">
+          <div class="weather-card-icon">☁️</div>
+          <h2 class="weather-card-temperature">32°</h2>
+          <p class="weather-card-condition">Cloudy</p>
+        </div>
+
+        <!-- Weather Details -->
+        <div class="weather-card-details">
+          <div class="weather-detail">
+            <p class="weather-detail-label">Feels Like</p>
+            <p class="weather-detail-value">35°</p>
+          </div>
+
+          <div class="weather-detail">
+            <p class="weather-detail-label">Humidity</p>
+            <p class="weather-detail-value">40%</p>
+          </div>
+          <div class="weather-detail">
+            <p class="weather-detail-label">Wind</p>
+            <p class="weather-detail-value">8 km/h</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Warning Banner -->
+      <section class="weather-alert weather-alert--heat">
+        <p class="weather-alert-text">
+          ⚠ Extreme heat detected. Stay hydrated and avoid direct sunlight.
+        </p>
+      </section>
+
+      <!-- Error Message -->
+      <section class="error-message hidden">
+        <p class="error-message-text">
+          CIty not found. Please try another location.
+        </p>
+      </section>
+
+      <!-- loader -->
+      <section class="loader hidden">
+        <div class="loader-circle"></div>
+        <p class="loader-text">Fetching weather...</p>
+      </section>
     </main>
     <!-- Main JavaScript -->
     <script src="./scripts/main.js"></script>
