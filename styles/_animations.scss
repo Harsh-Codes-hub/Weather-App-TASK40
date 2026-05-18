@@ -1,0 +1,125 @@
+// ===== Body Transition =====
+body {
+  transition:
+    background 0.8s ease,
+    color 0.3s ease;
+}
+
+// ===== Weather Card Transition =====
+.weather-card {
+  transition:
+    background 0.5s ease,
+    border-color 0.5s ease,
+    box-shadow 0.5s ease,
+    transform 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-4px);
+}
+
+// ===== Search Button Transition =====
+.search-button {
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.06);
+}
+
+// ===== Weather Alert Transition =====
+.weather-alert {
+  transition:
+    background 0.5s ease,
+    border-color 0.5s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+// ===== Alert Slide In Animation Keyframes =====
+@keyframes alertSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ===== Weather Alert Animation =====
+.weather-alert {
+  animation: alertSlideIn 0.4s ease;
+}
+
+// ===== Card Fade Up Animation Keyframes =====
+@keyframes cardFadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0) scale(1);
+  }
+}
+
+// ===== Weather Card animation =====
+.weather-card {
+  animation: cardFadeUp 0.5s ease;
+}
+
+// ===== Glow Float Animation Keyframes =====
+@keyframes glowFloat {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+
+  50% {
+    transform: translateY(-10px) scale(1.03);
+  }
+
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+// ===== Background Glow Animation =====
+.background-glow {
+  animation: glowFloat 8s ease-in-out infinite;
+}
+
+// ===== Loader Pulse Animation Keyframes =====
+@keyframes loaderPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+// ===== Loader Circle Animation =====
+.loader-circle {
+  animation: loaderPulse 1.2s ease infinite;
+}

@@ -64,12 +64,4 @@
   border-radius: $radius-medium;
 
   cursor: pointer;
-
-  transition: $transition-default;
-}
-
-.search-button:hover {
-  background-color: rgba(255, 255, 255, 0.14);
-
-  transform: translateY(-1px);
 }
