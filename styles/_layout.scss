@@ -1,3 +1,4 @@
+// ===== App Style =====
 .app {
   width: 100%;
   min-height: 100vh;
@@ -12,6 +13,7 @@
   gap: 2rem;
 }
 
+// ===== Background Glow =====
 .background-glow {
   position: fixed;
 
@@ -28,10 +30,12 @@
   z-index: -1;
 }
 
+// ===== App Header =====
 .app-header {
   text-align: center;
 }
 
+// ===== App Title =====
 .app-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
 
@@ -40,6 +44,7 @@
   letter-spacing: -2px;
 }
 
+// ===== App Subtitle =====
 .app-subtitle {
   margin-top: 0.75rem;
 
