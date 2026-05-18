@@ -1,0 +1,135 @@
+// =====  =====
+.weather-card {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 2rem;
+
+  background: $bg-card;
+
+  border: 1px solid $border-color;
+
+  border-radius: $radius-large;
+
+  backdrop-filter: $blur-glass;
+
+  box-shadow: $shadow-soft;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.weather-card::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent);
+
+  pointer-events: none;
+}
+
+// ===== Weather Card Top =====
+.weather-card-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+// ===== Weather Card Location Group =====
+.weather-card-location-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.35rem;
+}
+
+// ===== Weather Card Location =====
+.weather-card-location {
+  font-size: 1rem;
+
+  color: $text-secondary;
+}
+
+// ===== Weather Card Date =====
+.weather-card-date {
+  font-size: 0.85rem;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  text-transform: capitalize;
+}
+
+// ===== Weather Card Main area =====
+.weather-card-main {
+  margin-top: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+// ===== Weather Card Weather Icon =====
+.weather-card-icon {
+  font-size: 4rem;
+
+  filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.12));
+}
+
+// ===== Weather Card Temperature =====
+.weather-card-temperature {
+  margin-top: 1rem;
+
+  font-size: clamp(4rem, 10vw, 5rem);
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -4px;
+}
+
+// ===== Weather Card Condition =====
+.weather-card-condition {
+  margin-top: 0.75rem;
+
+  font-size: 1rem;
+
+  color: $text-secondary;
+}
+
+// ===== Weather Card Details =====
+.weather-card-details {
+  margin-top: 2.5rem;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1rem;
+}
+
+// ===== Weather Details =====
+.weather-detail {
+  padding: 1rem;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border-radius: $radius-medium;
+
+  text-align: center;
+}
+
+// ===== Weather Detail Labels =====
+.weather-detail-label {
+  font-size: 0.8rem;
+
+  color: rgba(255, 255, 255, 0.5);
+}
