@@ -1,0 +1,75 @@
+// ===== Search Section =====
+.search-section {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+// ===== Search Form =====
+.search-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+// ===== Search Input Wrapper =====
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+
+  gap: 0.75rem;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid $border-color;
+
+  border-radius: $radius-large;
+
+  backdrop-filter: $blur-glass;
+
+  box-shadow: $shadow-soft;
+}
+
+.search-input-wrapper:focus-within {
+  border-color: rgba(255, 255, 255, 0.18);
+
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.03);
+}
+
+// ===== Search Input =====
+.search-input {
+  flex: 1;
+
+  background: transparent;
+
+  padding-inline-start: 1rem;
+
+  color: $text-primary;
+
+  font-size: 1rem;
+}
+
+.search-input::placeholder {
+  color: $text-secondary;
+}
+
+// ===== Search Button =====
+.search-button {
+  padding: 0.9rem 1.4rem;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: $text-primary;
+
+  border-radius: $radius-medium;
+
+  cursor: pointer;
+
+  transition: $transition-default;
+}
+
+.search-button:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+
+  transform: translateY(-1px);
+}

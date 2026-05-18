@@ -1,0 +1,49 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+.background-glow {
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background: radial-gradient(
+    circle at top,
+    rgba(255, 255, 255, 0.04),
+    transparent 55%
+  );
+
+  z-index: -1;
+}
+
+.app-header {
+  text-align: center;
+}
+
+.app-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+.app-subtitle {
+  margin-top: 0.75rem;
+
+  color: $text-secondary;
+
+  font-size: 0.95rem;
+}
