@@ -1,0 +1,21 @@
+// ===== Body Weather Themes =====
+
+body.default-theme {
+  background: linear-gradient(135deg, #050505, #101010, #161616);
+}
+
+body.calm-theme {
+  background: linear-gradient(135deg, #08120d, #101814, #161616);
+}
+
+body.rain-theme {
+  background: linear-gradient(135deg, #050b12, #101923, #161616);
+}
+
+body.storm-theme {
+  background: linear-gradient(135deg, #0b0612, #151124, #161616);
+}
+
+body.heat-theme {
+  background: linear-gradient(135deg, #140904, #22130d, #161616);
+}

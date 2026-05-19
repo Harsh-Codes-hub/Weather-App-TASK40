@@ -19,8 +19,6 @@
   position: relative;
 
   overflow: hidden;
-
-  text-align: center;
 }
 
 .weather-alert::before {
@@ -37,6 +35,8 @@
 
 // ===== Alert Text =====
 .weather-alert-text {
+  width: 100%;
+
   font-size: 0.92rem;
 
   line-height: 1.5;
@@ -44,6 +44,8 @@
   position: relative;
 
   z-index: 1;
+
+  text-align: center;
 }
 
 // ===== Heat Alert =====

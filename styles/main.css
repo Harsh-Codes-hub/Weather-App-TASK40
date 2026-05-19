@@ -223,7 +223,6 @@ img {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   position: relative;
   overflow: hidden;
-  text-align: center;
 }
 
 .weather-alert::before {
@@ -235,10 +234,12 @@ img {
 }
 
 .weather-alert-text {
+  width: 100%;
   font-size: 0.92rem;
   line-height: 1.5;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 .weather-alert--heat {
@@ -437,4 +438,23 @@ body {
   .search-input {
     padding: 0.2rem;
   }
+}
+body.default-theme {
+  background: linear-gradient(135deg, #050505, #101010, #161616);
+}
+
+body.calm-theme {
+  background: linear-gradient(135deg, #08120d, #101814, #161616);
+}
+
+body.rain-theme {
+  background: linear-gradient(135deg, #050b12, #101923, #161616);
+}
+
+body.storm-theme {
+  background: linear-gradient(135deg, #0b0612, #151124, #161616);
+}
+
+body.heat-theme {
+  background: linear-gradient(135deg, #140904, #22130d, #161616);
 }/*# sourceMappingURL=main.css.map */
