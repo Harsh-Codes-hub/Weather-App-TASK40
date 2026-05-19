@@ -1,0 +1,45 @@
+// ===== Media Query for screen with max width 768px
+@media (max-width: 768px) {
+  .app {
+    padding: 1.5rem;
+  }
+
+  .app-title {
+    font-size: 3rem;
+  }
+
+  .search-input-wrapper {
+    flex-direction: column;
+  }
+
+  .search-input {
+    text-align: center;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+
+  .weather-card {
+    padding: 1.5rem;
+  }
+
+  .weather-card-temperature {
+    font-size: 4rem;
+  }
+
+  .weather-card-details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+// ===== Media Query for screen with max width 480px
+@media (width: 480px) {
+  .weather-card-temperature {
+    font-size: 3.5rem;
+  }
+
+  .search-input {
+    padding: 0.2rem;
+  }
+}

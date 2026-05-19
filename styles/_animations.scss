@@ -28,7 +28,7 @@ body {
 
 .search-button:hover {
   background-color: rgba(255, 255, 255, 0.14);
-  
+
   transform: translateY(-2px);
 
   box-shadow: 0 6px 16px rgba(255, 255, 255, 0.06);
@@ -102,24 +102,24 @@ body {
 }
 
 // ===== Loader Pulse Animation Keyframes =====
-@keyframes loaderPulse {
+@keyframes loaderPulseRotate {
   0% {
-    transform: scale(1);
+    transform: scale(1) rotate(0deg);
     opacity: 0.5;
   }
 
   50% {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(180deg);
     opacity: 1;
   }
 
   100% {
-    transform: scale(1);
+    transform: scale(1) rotate(360deg);
     opacity: 0.5;
   }
 }
 
 // ===== Loader Circle Animation =====
 .loader-circle {
-  animation: loaderPulse 1.2s ease infinite;
+  animation: loaderPulseRotate 1.2s linear infinite;
 }

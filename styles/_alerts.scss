@@ -37,65 +37,126 @@
 
 // ===== Alert Text =====
 .weather-alert-text {
-    font-size: 0.92rem;
+  font-size: 0.92rem;
 
-    line-height: 1.5;
+  line-height: 1.5;
 
-    position: relative;
+  position: relative;
 
-    z-index: 1;
+  z-index: 1;
 }
 
 // ===== Heat Alert =====
 .weather-alert--heat {
-    background: rgba(255, 120, 40, 0.08);
+  background: rgba(255, 120, 40, 0.08);
 
-    border-color: rgba(255, 140, 60, 0.2);
+  border-color: rgba(255, 140, 60, 0.2);
 
-    box-shadow: 0 0 25px rgba(255, 120, 40, 0.08);
+  box-shadow: 0 0 25px rgba(255, 120, 40, 0.08);
 }
 
 // ===== Cold Alert =====
 .weather-alert--cold {
-    background: rgba(120, 180, 255, 0.08);
+  background: rgba(120, 180, 255, 0.08);
 
-    border-color: rgba(120, 180, 255, 0.2);
+  border-color: rgba(120, 180, 255, 0.2);
 
-    box-shadow: 0 0 25px rgba(120, 180, 255, 0.08);
+  box-shadow: 0 0 25px rgba(120, 180, 255, 0.08);
 }
 
 // ===== Storm Alert =====
 .weather-alert--storm {
-    background: rgba(130, 100, 255, 0.08);
+  background: rgba(130, 100, 255, 0.08);
 
-    border-color: rgba(130, 100, 255, 0.2);
+  border-color: rgba(130, 100, 255, 0.2);
 
-    box-shadow: 0 0 25px rgba(130, 100, 255, 0.08);
+  box-shadow: 0 0 25px rgba(130, 100, 255, 0.08);
 }
 
 // ===== Windy Alert =====
 .weather-alert--windy {
-    background: rgba(180, 180, 180, 0.06);
+  background: rgba(180, 180, 180, 0.06);
 
-    border-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.12);
 
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.04);
 }
 
 // ===== Rain Alert =====
 .weather-alert--rain {
-    background: rgba(80, 140, 255, 0.08);
+  background: rgba(80, 140, 255, 0.08);
 
-    border-color: rgba(80, 140, 255, 0.18);
+  border-color: rgba(80, 140, 255, 0.18);
 
-    box-shadow: 0 0 25px rgba(80, 140, 255, 0.06);
+  box-shadow: 0 0 25px rgba(80, 140, 255, 0.06);
 }
 
 // ===== Calm Alert =====
 .weather-alert--calm {
-    background: rgba(120, 255, 180, 0.05);
+  background: rgba(120, 255, 180, 0.05);
 
-    border-color: rgba(120, 255, 180, 0.14);
+  border-color: rgba(120, 255, 180, 0.14);
 
-    box-shadow: 0 0 20px rgba(120, 255, 180, 0.05);
+  box-shadow: 0 0 20px rgba(120, 255, 180, 0.05);
+}
+
+// ===== Error Message =====
+.error-message {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 1rem 1.25rem;
+
+  background: rgba(255, 80, 80, 0.08);
+
+  border: 1px solid rgba(255, 80, 80, 0.18);
+
+  border-radius: $radius-medium;
+
+  backdrop-filter: $blur-glass;
+
+  box-shadow: 0 0 20px rgba(255, 80, 80, 0.06);
+
+  text-align: center;
+}
+
+// ===== Error Message Text =====
+.error-message-text {
+  color: #ffb4b4;
+
+  font-size: 0.92rem;
+
+  line-height: 1.5;
+}
+
+// ===== Loader =====
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+
+  text-align: center;
+}
+
+// ===== Loader Circle =====
+.loader-circle {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  border: 3px solid rgba(255, 255, 255, 0.08);
+
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+// ===== Loader Text =====
+.loader-text {
+  color: $text-secondary;
+
+  font-size: 0.9rem;
+
+  letter-spacing: 0.5px;
 }
